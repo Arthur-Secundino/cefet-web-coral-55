@@ -71,6 +71,7 @@ strong {
 #cardapio {
   grid-column-start: 2;
   grid-row-start: 2;
+  padding: 0 20px;
 }
 
 #rodape-pagina {
@@ -103,6 +104,9 @@ strong {
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2em;
 }
 
 
