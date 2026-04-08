@@ -54,7 +54,8 @@ strong {
   margin-right: auto;
   display: grid;
   grid-template-columns: 154px 646px;
-  grid-template-rows: 98.20px 1fr 116px;
+  /* grid-template-rows: 98.20px 1fr 116px; */
+  grid-template-rows: auto 1fr auto;
 }
 
 #cabecalho-pagina {
@@ -81,7 +82,7 @@ strong {
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+  padding: 10px 10px 10px 0;
 }
 
 #cabecalho-pagina h1 {
@@ -89,6 +90,7 @@ strong {
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
+  text-align: center;
 }
 
 #cabecalho-pagina h2 {
@@ -96,6 +98,7 @@ strong {
   font-size: 24px;
   color: #333;
   font-weight: normal;
+  text-align: end;
 }
 
 /* EXERCÍCIO 4: cada item do menu */
