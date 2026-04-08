@@ -5,6 +5,19 @@
 
 :root {
   --ALTUTRA_ELEMENTO: 84px;
+  --COR_DE_FUNDO_BODY: #fff;
+  --COR_DESTAQUE: #d027aa;
+  --COR_RECIPIENTE_INICIO_GRADIENTE: #f6f1b2;
+  --COR_RECIPIENTE_FIM_GRADIENTE: #4599b2;
+  --FUNDO_CARDAPIO_VERMELHO: 255;
+  --FUNDO_CARDAPIO_VERDE: 255;
+  --FUNDO_CARDAPIO_AZUL: 255;
+  --COR_BORDA_RECIPIENTE: #d3d3d3;
+  --COR_BORDA_CARDAPIO: #aac0ae;
+  --COR_CARDAPIO_H3: #333;
+  --COR_CARDAPIO_ARTIGO: #333;
+  --COR_CABECALHO_H1: #e90c0c;
+  --COR_CABECALHO_H2: #333;
 }
 
 h1 {
@@ -16,37 +29,37 @@ html, body, #recipiente {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--COR_DE_FUNDO_BODY);
   font-family: "Verdana", sans-serif;
   margin: 0;
 }
 
 strong {
-  color: #d027aa;
+  color: var(--COR_DESTAQUE);
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
-  border-left: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  background-image: linear-gradient(to bottom, var(--COR_RECIPIENTE_INICIO_GRADIENTE), var(--COR_RECIPIENTE_FIM_GRADIENTE) 80%);
+  border-left: 1px solid var(--COR_BORDA_RECIPIENTE);
+  border-right: 1px solid var(--COR_BORDA_RECIPIENTE);
 }
 
 #cardapio {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top: 1px solid #aac0ae;
-  border-bottom: 1px solid #aac0ae;
-  border-left: 1px solid #aac0ae;
+  background-color: rgba(var(--FUNDO_CARDAPIO_VERMELHO), var(--FUNDO_CARDAPIO_VERDE), var(--FUNDO_CARDAPIO_AZUL), 0.2);
+  border-top: 1px solid var(--COR_BORDA_CARDAPIO);
+  border-bottom: 1px solid var(--COR_BORDA_CARDAPIO);
+  border-left: 1px solid var(--COR_BORDA_CARDAPIO);
 }
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--COR_CARDAPIO_H3);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--COR_CARDAPIO_ARTIGO);
 }
 
 
@@ -93,7 +106,7 @@ strong {
 #cabecalho-pagina h1 {
   margin: 0;
   font-size: 36px;
-  color: #e90c0c;
+  color: var(--COR_CABECALHO_H1);
   font-weight: normal;
   text-align: center;
 }
@@ -101,7 +114,7 @@ strong {
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--COR_CABECALHO_H2);
   font-weight: normal;
   text-align: end;
 }
