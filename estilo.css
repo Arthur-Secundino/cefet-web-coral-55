@@ -3,6 +3,10 @@
 @import "fonts/ravie.css";
 @import "fonts/verdana.css";
 
+:root {
+  --ALTUTRA_ELEMENTO: 84px;
+}
+
 h1 {
   font-family: "Ravie", sans-serif;
 }
@@ -127,9 +131,14 @@ article {
 
 /* EXERCÍCIO 7: o ticket */
 #ticket {
+  position: fixed;
+  top: calc(50% - var(--ALTUTRA_ELEMENTO) / 2);
+  left: -89px;
+  transition: left 100ms ease-out;
 }
 
 #ticket:hover {
+  left: 0;
 }
 
 
