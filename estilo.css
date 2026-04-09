@@ -176,4 +176,20 @@ article {
    as custom properties */
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --COR_DE_FUNDO_BODY: #000;
+    --COR_DESTAQUE: #d027aa;
+    --COR_RECIPIENTE_INICIO_GRADIENTE: #08083a;
+    --COR_RECIPIENTE_FIM_GRADIENTE: #00002e;
+    --FUNDO_CARDAPIO_VERMELHO: 155;
+    --FUNDO_CARDAPIO_VERDE: 155;
+    --FUNDO_CARDAPIO_AZUL: 155;
+    --COR_BORDA_RECIPIENTE: #9b9b9b;
+    --COR_BORDA_CARDAPIO: #aac0ae;
+    --COR_CARDAPIO_H3: #fff;
+    --COR_CARDAPIO_ARTIGO: #fff;
+    --COR_CABECALHO_H1: #e90c0c;
+    --COR_CABECALHO_H2: #fff;
+  }
+}
